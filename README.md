@@ -1,5 +1,7 @@
 # Photoacoustic Musical Laser
 
+*V1.0 completed April 2026*
+
 Handheld and battery powered, when pointed at an object while playing, that object will begin playing music. At the time of its creation in April of 2026, it was the first handheld laser capable of playing music through the photoacoustic effect.
 
 ## Specifications
