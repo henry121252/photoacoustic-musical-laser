@@ -14,7 +14,7 @@ Handheld and battery powered, when pointed at an object while playing, that obje
 
 * **Laser diode:** NUBB24 44W 455nm diode array
 * TTL and analog modulation
-* **Power supply:** 6S 3300mAh LiPo bucked to +5V and +15V with 2x LM2596, also boosted to 40V with aliexpress boost module
+* **Power supply:** 6S 3300mAh LiPo nominal voltage 22.2V bucked to +5V and +15V as well as an adjustable supply for the main cooling fan with 3x LM2596, also boosted to 40V with aliexpress boost module
 * **PCBs:** 6 custom photoboards
 * **Microcontroller:** STM32F103C8
 
@@ -37,3 +37,30 @@ Handheld and battery powered, when pointed at an object while playing, that obje
 * **Constant current linear regulator:** A laser diode requires a constant current source to achieve precise output levels and to avoid damaging the diode. Because of the desired musical capabilities, a linear regulator was used to achieve a stable, noise free current through all modes. A suitable driver was built with the IRF4468 power mosfet, an LM358 op amp, and a 100 milliohm power resistor.
 * **Accurate audio modulation:** There are not exactly guides on how to achieve crisp, clear audio from a laser beam. I had seen TTL-modulated lasers produce single frequency tones before, and deduced that by modulating the beam continuously instead of discretely, all sorts of tones could be reproduced. As noted above, to stop audio clipping, the audio waveform must ride on a DC bias, allowing the current to smoothly change from maximum to minimum.
 * **Embedded controller:** Many of the functions of the device go through a microcontroller, notably the LCD screen displaying temperature, diode current, and battery voltage. There are many signals for the microcontroller to process and display, in addition to being responsible for toggling the laser on and off.
+* **Thermal performance:** 
+  1. The NUBB24 dissipates around 50 watts of heat at full power and must run cool enough to be mounted on 3D printed parts. I used a large copper heatsink approximately 90x65x42mm and a large cooling fan with an adjustable power supply 0-Vbat (22.2V nominal)
+  2. The linear regulator drops the 40V from the boost converter to 36V while running 3A through at full power. This translates to 12W of heat, and requires significant cooling as well. I had to mill down a spare heatsink i retrieved from a broken amplifier. That in combination with the 2x 40mm 24V cooling fans at the front of the compartment provided ample cooling.
+
+## Experiments
+
+To maximize audio output at **455 nm**, an ideal photoacoustic target needs:
+* **High optical absorption at 455 nm** to convert as much beam energy as possible into heat
+* **Low heat capacity & high coefficient of thermal expansion** to maximize rapid surface/air pressure changes per modulation cycle
+
+Wood was originally used for quick baseline tests. Once the laser was complete, multiple candidate targets were tested—mostly coated or mixed with **candle soot** due to its near-black optical absorption and very low heat capacity—to find the best "photoacoustic transducer."
+
+### Materials Tested
+
+| Target Material | Preparation | Observed Performance |
+| :--- | :--- | :--- |
+| **Copper plate (1 mm)** | Coated with candle soot | **Loudest and clearest overall** |
+| **Aluminum foil** | Coated with candle soot | Very high volume (membrane behavior; less clear/directional than rigid plate) |
+| **Polyamide** | Coated with candle soot | Very high volume (membrane behavior; beaten by rigid targets) |
+| **Silicone** | Mixed with candle soot | *[Add brief observation — e.g., volume/clarity]* |
+| **Glass** | Coated with candle soot | *[Add brief observation — e.g., volume/clarity]* |
+| **Wood** | Uncoated | Initial baseline used for quick testing |
+
+### Key Findings
+
+* **Best Overall Transducer (`1 mm` Copper + Candle Soot):** A 1 mm copper plate coated in candle soot produced the loudest, clearest audio across all tested materials.
+* **Rigid Surfaces vs. Membranes:** Membrane-like materials (aluminum foil and polyamide coated in candle soot) were tested on the hypothesis that their low mass would allow them to behave like a drum. While they yielded some of the highest raw volumes, they were outperformed by rigid materials—likely because rigid surfaces provide stronger acoustic directivity, acting as a reflector that concentrates sound waves back into the forward hemisphere toward the listener.
