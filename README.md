@@ -20,6 +20,8 @@ Handheld and battery powered, when pointed at an object while playing, that obje
 
 ## Architecture
 
+<img src="Screenshot 2026-04-21 232331 (2).png" width="800" alt="Block circuit diagram">
+
 * The laser's voltage is supplied by a TL494 boost converter at 40V. Its current is regulated by a linear regulator made of an IRF4468 mosfet and an LM358 op amp. The laser also contains an audio preamplifier. When in analog modulation mode, the audio signal is fed into the non-inverting input of the op-amp with a dc bias equal to half the maximum VPP of the audio. This is neccesary as it keeps the value of the current desired by the regulator positive, which stops the laser diode from being cut off in negative half cycles of the audio.
 
 <img src="Screen Recording 2026-11-16 192127.gif" width="500" alt="Regulator demo">
