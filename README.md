@@ -4,6 +4,12 @@
 
 Handheld and battery powered, when pointed at an object while playing, that object will begin playing music. At the time of its creation in April of 2026, it was the first handheld laser capable of playing music through the photoacoustic effect.
 
+<p>
+  <img src="IMG_0697 (1).jpg" width="400" alt="Front of the finished laser">
+  <img src="IMG_0698 (1).jpg" width="400" alt="Rear view of the finished laser, showcasing the user interface">
+  <img src="IMG_0685 (1).jpg" width="400" alt="Inner circuitry of the laser">
+</p>
+
 ## Specifications
 
 * **Laser diode:** NUBB24 44W 455nm diode array
