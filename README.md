@@ -16,7 +16,7 @@ https://github.com/user-attachments/assets/083f9dec-a40b-4af8-b077-9969d5db2595
 
 * **Laser diode:** NUBB24 44W 455nm diode array
 * TTL and analog modulation
-* **Power supply:** 6S 3300mAh LiPo nominal voltage 22.2V bucked to +5V and +15V as well as an adjustable supply for the main cooling fan with 3x LM2596, also boosted to 40V with aliexpress boost module
+* **Power supply:** 6S 3300mAh LiPo nominal voltage 22.2V bucked to +5V and +15V as well as an adjustable supply for the main cooling fan with 3x LM2576, also boosted to 40V with aliexpress boost module
 * **PCBs:** 6 custom photoboards
 * **Microcontroller:** STM32F103C8
 
