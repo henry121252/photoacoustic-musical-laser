@@ -10,6 +10,8 @@ Handheld and battery powered, when pointed at an object while playing, that obje
   <img src="IMG_0685 (1).jpg" width="400" alt="Inner circuitry of the laser">
 </p>
 
+https://github.com/user-attachments/assets/083f9dec-a40b-4af8-b077-9969d5db2595
+
 ## Specifications
 
 * **Laser diode:** NUBB24 44W 455nm diode array
