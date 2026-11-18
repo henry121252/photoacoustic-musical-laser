@@ -4,6 +4,14 @@
 
 Handheld and battery powered, when pointed at an object while playing, that object will begin playing music. At the time of its creation in April of 2026, it was the first handheld laser capable of playing music through the photoacoustic effect.
 
+> [!CAUTION]
+> **CLASS 4 LASER, FIRE, THERMAL, AND BATTERY HAZARDS — READ BEFORE PROCEEDING**
+>
+> This project documents a **44 W, 455 nm (blue) Class 4 laser** system powered by a high-discharge **6S LiPo** battery and a **40 V** boost stage. Improper construction or operation can cause **instantaneous, permanent eye damage, severe skin burns, fires, toxic fumes, and shattering of brittle targets.**
+>
+> - **Eye Protection:** A 44 W Class 4 beam can cause permanent retinal damage from **both direct beams and diffuse reflections** off matte targets—not just specular reflections off foil, bare metal, or glass. **Certified laser safety eyewear rated for 455 nm** (typically **OD 6+ / OD 7+** for this power level) must be worn by everyone in the area whenever the system is energized.
+> - **Disclaimer:** This repository is provided for educational and documentation purposes only. If you choose to build or operate a similar device, you assume all risks and responsibility for compliance with local laws and applicable laser safety standards (such as ANSI Z136.1).
+
 <p>
   <img src="IMG_0697 (1).jpg" width="400" alt="Front of the finished laser">
   <img src="IMG_0698 (1).jpg" width="400" alt="Rear view of the finished laser, showcasing the user interface">
