@@ -13,9 +13,9 @@ Handheld and battery-powered, when pointed at an object while playing, it causes
 > - **Disclaimer:** This repository is provided for educational and documentation purposes only. If you choose to build or operate a similar device, you assume all risks and responsibility for compliance with local laws and applicable laser safety standards.
 
 <p>
-  <img src="attachements/IMG_0697 (1).jpg" width="400" alt="Front of the finished laser">
-  <img src="attachements/IMG_0698 (1).jpg" width="400" alt="Rear view of the finished laser, showcasing the user interface">
-  <img src="attachements/IMG_0685 (1).jpg" width="400" alt="Inner circuitry of the laser">
+  <img src="attachments/IMG_0697 (1).jpg" width="400" alt="Front of the finished laser">
+  <img src="attachments/IMG_0698 (1).jpg" width="400" alt="Rear view of the finished laser, showcasing the user interface">
+  <img src="attachments/IMG_0685 (1).jpg" width="400" alt="Inner circuitry of the laser">
 </p>
 
 https://github.com/user-attachments/assets/083f9dec-a40b-4af8-b077-9969d5db2595
@@ -30,11 +30,11 @@ https://github.com/user-attachments/assets/083f9dec-a40b-4af8-b077-9969d5db2595
 
 ## Architecture
 
-<img src="attachements/Screenshot 2026-04-21 232331 (2).png" width="800" alt="Block circuit diagram">
+<img src="attachments/Screenshot 2026-04-21 232331 (2).png" width="800" alt="Block circuit diagram">
 
 * The laser's voltage is supplied by a TL494 boost converter at 40V. Its current is regulated by a linear regulator made of an IRF4468 mosfet and an LM358 op amp. The laser also contains an audio preamplifier. When in analog modulation mode, the audio signal is fed into the non-inverting input of the op-amp with a dc bias equal to half the maximum VPP of the audio. This is neccesary as it keeps the value of the current desired by the regulator positive, which stops the laser diode from being cut off in negative half cycles of the audio.
 
-<img src="attachements/Screen Recording 2026-11-16 192127.gif" width="500" alt="Regulator demo">
+<img src="attachments/Screen Recording 2026-11-16 192127.gif" width="500" alt="Regulator demo">
 
 * The device has a switch to swap between 3 modes:
   1. Manual power adjust via a potentiometer
@@ -75,11 +75,11 @@ Wood was originally used for quick baseline tests. Once the laser was complete, 
 * **Test Method:** A Python script on a laptop generated a **0 Hz – 20 kHz** tone sweep fed directly into the laser's **AUX-in** port while logging acoustic gain over time for each target. An iPhone SE 2 acted as the microphone, sitting approximately 6 inches down and 6 inches to the left of and in the same plane as target. *(The hand-drawn annotation on the Glass plot marks the point where the glass broke during testing.)*
 
 <p>
-  <img src="attachements/Screenshot 2026-11-16 213938.png" width="400" alt="Copper gain">
-  <img src="attachements/Screenshot 2026-11-16 213915.png" width="400" alt="Glass gain">
-  <img src="attachements/Screenshot 2026-11-16 213951.png" width="400" alt="Aluminum foil gain">
-  <img src="attachements/Screenshot 2026-11-16 214007.png" width="400" alt="Polyamide gain">
-  <img src="attachements/Screenshot 2026-11-16 214023.png" width="400" alt="Wood gain">
+  <img src="attachments/Screenshot 2026-11-16 213938.png" width="400" alt="Copper gain">
+  <img src="attachments/Screenshot 2026-11-16 213915.png" width="400" alt="Glass gain">
+  <img src="attachments/Screenshot 2026-11-16 213951.png" width="400" alt="Aluminum foil gain">
+  <img src="attachments/Screenshot 2026-11-16 214007.png" width="400" alt="Polyamide gain">
+  <img src="attachments/Screenshot 2026-11-16 214023.png" width="400" alt="Wood gain">
 </p>
 
 * **Best Overall Transducer (`1 mm` Copper + Candle Soot):** A 1 mm copper plate coated in candle soot produced the loudest, clearest audio across all tested materials.
