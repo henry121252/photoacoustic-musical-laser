@@ -40,7 +40,7 @@ https://github.com/user-attachments/assets/083f9dec-a40b-4af8-b077-9969d5db2595
   1. Manual power adjust via a potentiometer
   2. Analog modulation via aux port
   3. Low power mode (regulator supplies the least current it is capable of, beam is very dim. This is used for aiming.)
-* A P-channel mosfet is used to cut the power to the regulator, allowing the laser to be turned fully off, since the regulator cannot regulate down to 0A, as the LM358 has a certain resolution on its inputs. The mosfet comes from a level shifted GPIO pin from the STM32, with an input to the microcontroller coming from a bush button switch for toggle on/off. The device defaults to fully off when powered on.
+* A P-channel mosfet is used to cut the power to the regulator, allowing the laser to be turned fully off, since the regulator cannot regulate down to 0A, as the LM358 has a certain resolution on its inputs. The mosfet comes from a level shifted GPIO pin from the STM32, with an input to the microcontroller coming from a push button switch for toggle on/off. The device defaults to fully off when powered on.
 
 ## Challenges
 
