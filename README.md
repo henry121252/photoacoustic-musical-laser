@@ -55,7 +55,7 @@ https://github.com/user-attachments/assets/083f9dec-a40b-4af8-b077-9969d5db2595
   1. The NUBB24 dissipates around 50 watts of heat at full power and must run cool enough to be mounted on 3D printed parts. I used a large copper heatsink approximately 90x65x42mm and a large cooling fan with an adjustable power supply 0-Vbat (22.2V nominal)
   2. The linear regulator drops the 40V from the boost converter to 36V while running 3A through at full power. This translates to 12W of heat, and requires significant cooling as well. I had to mill down a spare heatsink i retrieved from a broken amplifier. That in combination with the 2x 40mm 24V cooling fans at the front of the compartment provided ample cooling.
 
-<img src="attachments/IMG_0685 (1).jpg" width="400" alt="Inner circuitry of the laser">
+<img src="attachments/IMG_0685 (1).jpg" width="600" alt="Inner circuitry of the laser">
 
 ## Experiments
 
