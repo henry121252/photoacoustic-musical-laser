@@ -10,12 +10,12 @@ Handheld and battery-powered, when pointed at an object while playing, it causes
 > This project documents a **44 W, 455 nm Class 4 laser** system powered by a high-discharge **6S LiPo** battery. Improper construction or operation can cause **instantaneous, permanent eye damage, severe skin burns, fires, and shattering of brittle targets.**
 >
 > - **Eye Protection:** A 44 W Class 4 beam can cause permanent retinal damage from **both direct beams and diffuse reflections** off matte targets—not just specular reflections off foil, bare metal, or glass. **Certified laser safety eyewear rated for 455 nm** (typically **OD 6+ / OD 7+** for this power level) must be worn by everyone in the area whenever the system is energized.
+> 
 > - **Disclaimer:** This repository is provided for educational and documentation purposes only. If you choose to build or operate a similar device, you assume all risks and responsibility for compliance with local laws and applicable laser safety standards.
 
 <p>
   <img src="attachments/IMG_0697 (1).jpg" width="400" alt="Front of the finished laser">
   <img src="attachments/IMG_0698 (1).jpg" width="400" alt="Rear view of the finished laser, showcasing the user interface">
-  <img src="attachments/IMG_0685 (1).jpg" width="400" alt="Inner circuitry of the laser">
 </p>
 
 https://github.com/user-attachments/assets/083f9dec-a40b-4af8-b077-9969d5db2595
@@ -23,7 +23,7 @@ https://github.com/user-attachments/assets/083f9dec-a40b-4af8-b077-9969d5db2595
 ## Specifications
 
 * **Laser diode:** NUBB24 44W 455nm diode array
-* TTL and analog modulation
+* **Modulation:** TTL and analog
 * **Power supply:** 6S 3300mAh LiPo nominal voltage 22.2V bucked to +5V and +15V as well as an adjustable supply for the main cooling fan with 3x LM2576, also boosted to 40V with aliexpress boost module
 * **PCBs:** 6 custom photoboards
 * **Microcontroller:** STM32F103C8
@@ -40,16 +40,22 @@ https://github.com/user-attachments/assets/083f9dec-a40b-4af8-b077-9969d5db2595
   1. Manual power adjust via a potentiometer
   2. Analog modulation via aux port
   3. Low power mode (regulator supplies the least current it is capable of, beam is very dim. This is used for aiming.)
+     
 * A P-channel mosfet is used to cut the power to the regulator, allowing the laser to be turned fully off, since the regulator cannot regulate down to 0A, as the LM358 has a certain resolution on its inputs. The mosfet comes from a level shifted GPIO pin from the STM32, with an input to the microcontroller coming from a push button switch for toggle on/off. The device defaults to fully off when powered on.
 
 ## Challenges
 
 * **Constant current linear regulator:** A laser diode requires a constant current source to achieve precise output levels and to avoid damaging the diode. Because of the desired musical capabilities, a linear regulator was used to achieve a stable, noise free current through all modes. A suitable driver was built with the IRF4468 power mosfet, an LM358 op amp, and a 100 milliohm power resistor.
+  
 * **Accurate audio modulation:** There are not exactly guides on how to achieve crisp, clear audio from a laser beam. I had seen TTL-modulated lasers produce single frequency tones before, and deduced that by modulating the beam continuously instead of discretely, all sorts of tones could be reproduced. As noted above, to stop audio clipping, the audio waveform must ride on a DC bias, allowing the current to smoothly change from maximum to minimum.
+  
 * **Embedded controller:** Many of the functions of the device go through a microcontroller, notably the LCD screen displaying temperature, diode current, and battery voltage. There are many signals for the microcontroller to process and display, in addition to being responsible for toggling the laser on and off.
+  
 * **Thermal performance:** 
   1. The NUBB24 dissipates around 50 watts of heat at full power and must run cool enough to be mounted on 3D printed parts. I used a large copper heatsink approximately 90x65x42mm and a large cooling fan with an adjustable power supply 0-Vbat (22.2V nominal)
   2. The linear regulator drops the 40V from the boost converter to 36V while running 3A through at full power. This translates to 12W of heat, and requires significant cooling as well. I had to mill down a spare heatsink i retrieved from a broken amplifier. That in combination with the 2x 40mm 24V cooling fans at the front of the compartment provided ample cooling.
+
+<img src="attachments/IMG_0685 (1).jpg" width="400" alt="Inner circuitry of the laser">
 
 ## Experiments
 
