@@ -72,7 +72,7 @@ Wood was originally used for quick baseline tests. Once the laser was complete, 
 
 ### Key Findings
 
-* **Test Method:** A Python script on a laptop generated a **0 Hz – 20 kHz** tone sweep fed directly into the laser's **AUX-in** port while logging acoustic gain over time for each target. *(The hand-drawn ink annotation on the Glass plot marks the point where the glass broke during testing.)*
+* **Test Method:** A Python script on a laptop generated a **0 Hz – 20 kHz** tone sweep fed directly into the laser's **AUX-in** port while logging acoustic gain over time for each target. An iPhone SE 2 acted as the microphone, sitting approximately 6 inches down and 6 inches to the left of and in the same plane as target. *(The hand-drawn annotation on the Glass plot marks the point where the glass broke during testing.)*
 
 <p>
   <img src="Screenshot 2026-11-16 213938.png" width="400" alt="Copper gain">
