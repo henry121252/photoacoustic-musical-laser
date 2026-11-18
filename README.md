@@ -5,7 +5,7 @@
 Handheld and battery-powered, when pointed at an object while playing, it causes that object to emit music. At the time of its creation in April 2026, it was the first handheld laser capable of playing smooth, continuous analog music—rather than simple pulsed tones—through the photoacoustic effect.
 
 > [!CAUTION]
-> **CLASS 4 LASER, FIRE, THERMAL, AND BATTERY HAZARDS — READ BEFORE PROCEEDING**
+> **CLASS 4 LASER, FIRE, AND BATTERY HAZARDS**
 >
 > This project documents a **44 W, 455 nm Class 4 laser** system powered by a high-discharge **6S LiPo** battery. Improper construction or operation can cause **instantaneous, permanent eye damage, severe skin burns, fires, and shattering of brittle targets.**
 >
