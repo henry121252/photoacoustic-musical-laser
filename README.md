@@ -74,7 +74,7 @@ Wood was originally used for quick baseline tests. Once the laser was complete, 
 | **Aluminum foil** | Coated with candle soot | Very high volume (membrane behavior; beaten by rigid targets) |
 | **Polyamide** | Coated with candle soot | Very high volume (membrane behavior; beaten by rigid targets) |
 | **Silicone** | Mixed with candle soot | Quiet overall; burned under the intense light |
-| **Wood** | Uncoated | Initial baseline used for quick testing |
+| **Wood** | Charred | Initial baseline used for quick testing |
 
 ### Key Findings
 
