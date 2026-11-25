@@ -49,7 +49,7 @@ https://github.com/user-attachments/assets/083f9dec-a40b-4af8-b077-9969d5db2595
   
 * **Accurate audio modulation:** There are not exactly guides on how to achieve crisp, clear audio from a laser beam. I had seen TTL-modulated lasers produce single frequency tones before, and deduced that by modulating the beam continuously instead of discretely, all sorts of tones could be reproduced. As noted above, to stop audio clipping, the audio waveform must ride on a DC bias, allowing the current to smoothly change from maximum to minimum.
   
-* **Embedded controller:** Many of the functions of the device go through a microcontroller, notably the LCD screen displaying temperature, diode current, and battery voltage. There are many signals for the microcontroller to process and display, in addition to being responsible for toggling the laser on and off.
+* **Embedded controller:** Many of the functions of the device go through a microcontroller, notably the LCD screen displaying diode temperature, diode current, and battery voltage. There are many signals for the microcontroller to process and display, in addition to being responsible for toggling the laser on and off.
   
 * **Thermal performance:** 
   1. The NUBB24 dissipates around 50 watts of heat at full power and must run cool enough to be mounted on 3D printed parts. I used a large copper heatsink approximately 90x65x42mm and a large cooling fan with an adjustable power supply 0-Vbat (22.2V nominal)
