@@ -18,7 +18,8 @@ Handheld and battery-powered, when pointed at an object while playing, it causes
   <img src="attachments/IMG_0698 (1).jpg" width="400" alt="Rear view of the finished laser, showcasing the user interface">
 </p>
 
-https://github.com/user-attachments/assets/083f9dec-a40b-4af8-b077-9969d5db2595
+<video src="https://github.com/user-attachments/assets/083f9dec-a40b-4af8-b077-9969d5db2595" controls="controls" style="max-width: 100%;">
+</video>
 
 ## Specifications
 
