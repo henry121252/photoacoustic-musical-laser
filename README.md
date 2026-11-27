@@ -2,7 +2,7 @@
 
 *V1.0 completed April 2026*
 
-Handheld and battery-powered, when pointed at an object while playing, it causes that object to emit music. At the time of its creation in April 2026, it was the first handheld laser capable of playing smooth, continuous analog music—rather than simple pulsed tones—through the photoacoustic effect.
+Handheld and battery-powered, when pointed at an object while playing, it causes that object to emit music. At the time of its creation in April 2026, it was the first handheld laser capable of playing smooth, continuous analog music,rather than simple pulsed tones, through the photoacoustic effect.
 
 > [!CAUTION]
 > **Class 4 laser, fire, and battery hazards**
@@ -26,7 +26,7 @@ Handheld and battery-powered, when pointed at an object while playing, it causes
 * **Laser diode:** NUBB24 44W 455nm diode array
 * **Modulation:** TTL and analog
 * **Power supply:** 6S 3300mAh LiPo nominal voltage 22.2V bucked to +5V and +15V as well as an adjustable supply for the main cooling fan with 3x LM2576, also boosted to 40V with aliexpress boost module
-* **PCBs:** 6 custom photoboards
+* **PCBs:** 6 custom protoboards
 * **Microcontroller:** STM32F103C8
 
 ## Architecture
