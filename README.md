@@ -5,11 +5,11 @@
 Handheld and battery-powered, when pointed at an object while playing, it causes that object to emit music. At the time of its creation in April 2026, it was the first handheld laser capable of playing smooth, continuous analog music—rather than simple pulsed tones—through the photoacoustic effect.
 
 > [!CAUTION]
-> **CLASS 4 LASER, FIRE, AND BATTERY HAZARDS**
+> **Class 4 laser, fire, and battery hazards**
 >
-> This project documents a **44 W, 455 nm Class 4 laser** system powered by a high-discharge **6S LiPo** battery. Improper construction or operation can cause **instantaneous, permanent eye damage, severe skin burns, fires, and shattering of brittle targets.**
+> This project documents a 44W, 455nm Class 4 laser system powered by a high-discharge 6S LiPo battery. Improper construction or operation can cause instantaneous, permanent eye damage, severe skin burns, fires, and shattering of brittle targets.
 >
-> - **Eye Protection:** A 44 W Class 4 beam can cause permanent retinal damage from **both direct beams and diffuse reflections** off matte targets—not just specular reflections off foil, bare metal, or glass. **Certified laser safety eyewear rated for 455 nm** (typically **OD 6+ / OD 7+** for this power level) must be worn by everyone in the area whenever the system is energized.
+> - **Eye Protection:** A 44 W Class 4 beam can cause permanent retinal damage from both direct beams and diffuse reflections off matte targets—not just specular reflections off foil, bare metal, or glass. Certified laser safety eyewear rated for 455 nm (typically OD 6+ / OD 7+ for this power level) must be worn by everyone in the area whenever the system is energized.
 > 
 > - **Disclaimer:** This repository is provided for educational and documentation purposes only. If you choose to build or operate a similar device, you assume all risks and responsibility for compliance with local laws and applicable laser safety standards.
 
@@ -60,8 +60,8 @@ Handheld and battery-powered, when pointed at an object while playing, it causes
 
 ## Experiments
 
-To maximize audio output at **455 nm**, an ideal photoacoustic target needs:
-* **High optical absorption at 455 nm** to convert as much beam energy as possible into heat
+To maximize audio output at 455nm, an ideal photoacoustic target needs:
+* **High optical absorption at 455nm** to convert as much beam energy as possible into heat
 * **Low heat capacity & high coefficient of thermal expansion** to maximize rapid surface/air pressure changes per modulation cycle
 
 Wood was originally used for quick baseline tests. Once the laser was complete, multiple candidate targets were tested—mostly coated or mixed with **candle soot** due to its near-black optical absorption and very low heat capacity—to find the best "photoacoustic transducer."
@@ -77,9 +77,9 @@ Wood was originally used for quick baseline tests. Once the laser was complete, 
 | **Silicone** | Mixed with candle soot | Quiet overall; burned under the intense light |
 | **Wood** | Charred | Initial baseline used for quick testing |
 
-### Key Findings
+### Experiment Results
 
-* **Test Method:** A Python script on a laptop generated a **0 Hz – 20 kHz** tone sweep fed directly into the laser's **AUX-in** port while logging acoustic gain over time for each target. An iPhone SE 2 acted as the microphone, sitting approximately 6 inches down and 6 inches to the left of and in the same plane as target. *(The hand-drawn annotation on the Glass plot marks the point where the glass broke during testing.)*
+* **Test Method:** A Python script on a laptop generated a 0 Hz – 20 kHz tone sweep fed directly into the laser's AUX-in port while logging acoustic gain over time for each target. An iPhone SE 2 acted as the microphone, sitting approximately 6 inches down and 6 inches to the left of and in the same plane as target. *(The hand-drawn annotation on the Glass plot marks the point where the glass broke during testing.)*
 
 <p>
   <img src="attachments/Screenshot 2026-11-16 213938.png" width="400" alt="Copper gain">
