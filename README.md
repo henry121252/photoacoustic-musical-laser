@@ -2,7 +2,7 @@
 
 *V1.0 completed April 2026*
 
-Handheld and battery-powered, when pointed at an object while playing, it causes that object to emit music. At the time of its creation in April 2026, it was the first handheld laser capable of playing smooth, continuous analog music, rather than simple pulsed tones, through the photoacoustic effect.
+A handheld battery powered laser that causes its target to play sound, capable of playing continous analog music rather than just simple pulsed tones.
 
 > [!CAUTION]
 > **Class 4 laser, fire, and battery hazards**
