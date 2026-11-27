@@ -89,7 +89,7 @@ Wood was originally used for quick baseline tests. Once the laser was complete, 
   <img src="attachments/Screenshot 2026-11-16 214023.png" width="400" alt="Wood gain">
 </p>
 
-* **Best Overall Transducer (`1 mm` Copper + Candle Soot):** A 1 mm copper plate coated in candle soot produced the loudest, clearest audio across all tested materials.
+* **Best Overall Transducer (1 mm Copper + Candle Soot):** A 1 mm copper plate coated in candle soot produced the loudest, clearest audio across all tested materials.
 
 * **Rigid Surfaces vs. Membranes:** Membrane-like materials (aluminum foil and polyamide coated in candle soot) were tested on the hypothesis that their low mass would allow them to behave like a drum. While they yielded some of the highest raw volumes, they were outperformed by rigid materials (such as glass and copper)—likely because rigid surfaces provide stronger acoustic directivity, acting as a reflector that concentrates sound waves back into the forward hemisphere toward the listener.
 
